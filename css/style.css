@@ -24,6 +24,9 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
+
 header{
   position: fixed;
   top:0; left: 0; right: 0;
@@ -85,7 +88,66 @@ header .icon #menu-bar{
   display: none;
 }
 
+section{
+  height: 100vh;
+  background-color: #666;
+}
 
+section:nth-child(even){
+  background-color: #fff;
+}
+
+#home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 2rem ;
+  
+}
+
+.container .con-right img {
+  width: 100%;
+}
+
+.container .con-right {
+  max-width: 35vw;
+}
+
+.container .con-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  word-break: break-all;
+
+  text-align: center;
+}
+
+.container .con-left .header{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--light-color);
+}
+
+.container .con-left .header span {
+  color: var(--green) ;
+}
+
+.container .con-left .description{
+  line-height: 25px;
+}
 
 
 
@@ -111,6 +173,7 @@ header .icon #menu-bar{
 
 @media (max-width: 768px ){
   
+
   header .icon #menu-bar{
     display: inline-block;
   }
